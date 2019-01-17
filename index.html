@@ -1,0 +1,74 @@
+<!-- CSS Stylesheets with Relative Paths -->
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shankarri Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body id="mainPage" onload="openContent('PortfolioInfo')">
+    <div id="headerTab">
+        <section id="btnName"> Shankarri Ragavan </section>
+        <section class="tab">
+            <button class="tablinks" onclick="openContent('indexInfo')">About</button>
+            <button class="tablinks" onclick="openContent('PortfolioInfo')">Portfolio</button>
+            <button class="tablinks" onclick="openContent('contactInfo')">Contact</button>
+        </section>
+    </div>
+
+    <div id="indexInfo" class="tabContent">
+        <h2>Shankarri Ragavan</h2>
+        <p>
+            <img src="assets/images/Profile Picture.jpg" alt="Shankarri Ragavan">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras cursus ante semper nibh pretium lobortis.
+            Phasellus orci tortor, auctor a lacinia in, tempus convallis felis. Praesent velit risus, luctus a
+            consequat quis, sollicitudin quis enim. Ut egestas erat vitae arcu tincidunt, ac pulvinar tortor
+            faucibus.
+            Nullam pulvinar nunc id vehicula porta. Ut pellentesque purus at arcu viverra posuere. Curabitur eget
+            dolor
+            laoreet, viverra diam vel, tempor magna.</p>
+        <p> Mauris malesuada sapien in fermentum ornare. Ut tellus ex, imperdiet ut urna tempus, maximus dapibus
+            nisl.
+            Praesent blandit, justo at efficitur lacinia, lacus magna luctus nulla, eu lacinia ipsum ex quis orci.
+            Aliquam erat volutpat. Nulla eu nibh vitae massa accumsan rhoncus. Donec cursus faucibus diam, vitae
+            sodales erat lacinia eu. Pellentesque et rutrum dui.
+        </p>
+        <p>Quisque consectetur finibus sapien. Vestibulum quis magna pretium lorem aliquam viverra. Suspendisse sed
+            aliquam neque, at ultrices diam. Aliquam sollicitudin sem a mauris malesuada placerat. In tempor, metus
+            eget suscipit aliquet, sapien nulla lobortis lacus, at consectetur lorem urna a velit. Sed aliquet, mi
+            a
+            feugiat tempus, ante tortor dignissim ligula, ac pharetra tellus tellus quis orci.
+        </p>
+    </div>
+    <iframe id="PortfolioInfo" src="portfolio.html" class="tabContent"></iframe>
+    <iframe id="contactInfo" src="contact.html" height="100%" class="tabContent"></iframe>
+    <script>
+        function openContent(tabName) {
+            if (tabName == "indexInfo") {
+                document.getElementById("indexInfo").style.display = "block";
+                document.getElementById("PortfolioInfo").style.display = "none";
+                document.getElementById("contactInfo").style.display = "none";
+            }
+            if (tabName == "PortfolioInfo") {
+                var pf = document.getElementById("PortfolioInfo");
+                document.getElementById("PortfolioInfo").style.display = "block";
+                document.getElementById("indexInfo").style.display = "none";
+                document.getElementById("contactInfo").style.display = "none";
+            }
+            if (tabName == "contactInfo") {
+                document.getElementById("contactInfo").style.display = "block";
+                document.getElementById("indexInfo").style.display = "none";
+                document.getElementById("PortfolioInfo").style.display = "none";
+            }
+        }
+
+    </script>
+</body>
+<footer>
+    <p>Copyright @</p>
+</footer>
+
+</html>
