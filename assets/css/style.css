@@ -1,17 +1,43 @@
+/* Background Image for whole body content */
 #mainPage 
 {
-    background-image: url("../images/leaves.png");
+    background-image: url("../images/leaves_2.jpg");
     background-color: rgba(209, 203, 203, 0.753);
- 
+    margin-top: 0px;
 }
 
+/* Heading tab */
+h2 {
+    color: #4aaaa5;
+    border-bottom: 2px solid #CCC;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+/* Styling footer text content*/
+#headerTab {
+    background-color: #ffffff;
+    width : 1000px;
+    padding-bottom: 15px;
+    margin:auto;
+    border-width: 1px;
+    border-color: #cccccc;
+    padding-bottom: 50px;
+    /* border-bottom-style: solid; */
+    
+}
+
+/*  Basic Styling for all Tab contents */
 .tabContent
 {
     background-color: #ffffff;
     color: #777777;
     width : 960px;
     margin:auto;
+    margin-top: 20px;
     padding: 20px;
+    padding-top :0px;
     font-size: 15px;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     border-color: #dddddd;
@@ -19,24 +45,20 @@
     border-width: 1px;
 }
 
-#PortfolioInfo, #contactInfo
+/* Height for tabcontent */
+#portfolioInfo, #contactInfo
  { 
-    height:500px; 
-}
-h2 {
-    color: #4aaaa5;
-    border-bottom: 2px solid #CCC;
-    padding-bottom: 20px;
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    height:450px; 
 }
 
-
+/* About page image styling */
 #indexInfo img {
     width: 10%;
     float: left;
     padding-right: 2%;
 }
 
+/* Styling footer*/
 footer
 {
     width: 100%;
@@ -52,6 +74,8 @@ footer
     border-top-color: #4aaaa5;
     border-top-style: solid;
 }
+
+/* Styling footer text content*/
 footer p
 {
     position: fixed;
@@ -59,18 +83,8 @@ footer p
     left: 50%;
 }
 
-#headerTab {
-    background-color: #ffffff;
-    width : 1000px;
-    padding: 20px;
-    margin:auto;
-    border-width: 1px;
-    border-color: #cccccc;
-    padding-bottom: 50px;
-    /* border-bottom-style: solid; */
-    
-}
-#btnName
+/* Button styling */
+.btnName
 {
     width: 20%;
     float: left;
@@ -83,6 +97,7 @@ footer p
     font-size: 20px;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
+
 /* Style the tab */
 .tab {
     float: right;
@@ -100,24 +115,69 @@ footer p
     padding-right:30px;
 }
   /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color: #777777;
-    color: #ffffff;
-  }
-  
-  /* Create an active/current tablink class */
-  .tab button.active {
-    background-color: #777777;
-    color: #ffffff;
-  }
+.tab button:hover {
+background-color: #777777;
+color: #ffffff;
+}
 
+/* Create an active/current tablink class */
+.tab button.active {
+background-color: #777777;
+color: #ffffff;
+}
+
+/* Portfolio Image styling */
 #imgContainer img
 {
-    height:200px; 
-    width:200px;
+    height:160px; 
+    width:160px;
+    position: relative;
+    padding-top: 10px;
+    padding-right : 50px;  
 }
-td
+
+/* Portfolio Image styling */
+#contactForm p
 {
-padding-top: 20px;
-padding-right : 50px;
+    margin:10px;
+    font-size: 15px;
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+} 
+
+/* Input elements and textarea width */
+#contactForm p input, textarea
+{
+    width :100%;
+}
+
+/* margin for submit button */
+#submitbtn
+{
+    margin-left:10px;
+}
+
+/*  Image container styling for Portfolio */
+#imgContainer div
+{
+    background-color: #4aaaa5;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    width:160px;
+    color: white;  
+}
+
+/*  Text placement over Image */
+.imgTopText
+{
+    position: absolute;
+    top:45%;
+}
+
+/*  Text placement over Image */
+.imgBottomText
+{
+    position: absolute;
+    bottom:10%;
 }

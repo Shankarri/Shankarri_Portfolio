@@ -1,26 +1,34 @@
-<!-- CSS Stylesheets with Relative Paths -->
-
 <!DOCTYPE html>
 <html lang="en-us">
-
 <head>
     <meta charset="UTF-8">
+    <!-- Title content of the page -->
     <title>Shankarri Portfolio</title>
+
+    <!-- Style sheet for this webpage is linked -->
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
-<body id="mainPage" onload="openContent('PortfolioInfo')">
+<!-- Call openContent function when page loads -->
+<body id="mainPage" onload="openContent('indexInfo')">
+
     <div id="headerTab">
-        <section id="btnName"> Shankarri Ragavan </section>
+        <section class="btnName"> Shankarri Ragavan </section>
+
+      <!-- Navigation tab with onclick funtion  -->
         <section class="tab">
             <button class="tablinks" onclick="openContent('indexInfo')">About</button>
-            <button class="tablinks" onclick="openContent('PortfolioInfo')">Portfolio</button>
+            <button class="tablinks" onclick="openContent('portfolioInfo')">Portfolio</button>
             <button class="tablinks" onclick="openContent('contactInfo')">Contact</button>
         </section>
     </div>
 
+    <!-- Index information for About Navigation tab  -->
     <div id="indexInfo" class="tabContent">
         <h2>Shankarri Ragavan</h2>
+
+        <!-- 3 Random paragraph from Loem ipsum -->
         <p>
             <img src="assets/images/Profile Picture.jpg" alt="Shankarri Ragavan">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras cursus ante semper nibh pretium lobortis.
@@ -43,25 +51,31 @@
             feugiat tempus, ante tortor dignissim ligula, ac pharetra tellus tellus quis orci.
         </p>
     </div>
-    <iframe id="PortfolioInfo" src="portfolio.html" class="tabContent"></iframe>
+
+    <!-- iframe linking for Portfolio Navigation tab  -->
+    <iframe id="portfolioInfo" src="portfolio.html" class="tabContent"></iframe>
+
+    <!-- iframe linking for Contact Navigation tab  -->
     <iframe id="contactInfo" src="contact.html" height="100%" class="tabContent"></iframe>
+
     <script>
+        // Function for displaying content only for selected Tab
         function openContent(tabName) {
             if (tabName == "indexInfo") {
                 document.getElementById("indexInfo").style.display = "block";
-                document.getElementById("PortfolioInfo").style.display = "none";
+                document.getElementById("portfolioInfo").style.display = "none";
                 document.getElementById("contactInfo").style.display = "none";
             }
-            if (tabName == "PortfolioInfo") {
-                var pf = document.getElementById("PortfolioInfo");
-                document.getElementById("PortfolioInfo").style.display = "block";
+            if (tabName == "portfolioInfo") {
+                var pf = document.getElementById("portfolioInfo");
+                document.getElementById("portfolioInfo").style.display = "block";
                 document.getElementById("indexInfo").style.display = "none";
                 document.getElementById("contactInfo").style.display = "none";
             }
             if (tabName == "contactInfo") {
                 document.getElementById("contactInfo").style.display = "block";
                 document.getElementById("indexInfo").style.display = "none";
-                document.getElementById("PortfolioInfo").style.display = "none";
+                document.getElementById("portfolioInfo").style.display = "none";
             }
         }
 
