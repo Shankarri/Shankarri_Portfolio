@@ -8,11 +8,10 @@
 }
 
 /* Heading inside Navigation bar */
-.nav-heading {
+.nav-heading, .card-header, .about_me, .portfolio {
     background-color: #347a77;
     font-size: 25px;
     font-family: 'Fredoka One';
-    text-align: center;
 }
 
 .email
@@ -21,28 +20,11 @@
     text-align: center;
     font-size: 20px;
 }
-/* All 3 pages heading style */
-h3 
-{
-    /* color: #347a77; */
-    border-bottom: 3px solid #ddd;
-}
+
 
 /* Profile Page Image style  */
 .profile_img
 {
-    min-width: 250px;
-    max-height: 250px;
+    width: 200px;
     float: left;
-    padding-right: 5%;
-    padding-bottom: 20px;
 }
-
-/* Style  for all rows */
-.row
-{
-    padding: .5rem 1rem;
-    max-width: 700px;
-    position: relative;
-}
-
