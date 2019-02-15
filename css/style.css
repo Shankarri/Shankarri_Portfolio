@@ -6,7 +6,11 @@
     color: white;
     background: url("../images/Background.jpg");
 }
-
+.navbar a
+{
+    background-color: black;
+    padding: 5px;
+}
 /* Heading inside Navigation bar */
 .nav-heading, .card-header, .about_me, .portfolio {
     background-color: #347a77;
