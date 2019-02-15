@@ -1,88 +1,45 @@
+<!-- Demo Layout for Bootstrap (with cards) -->
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
     <meta charset="UTF-8">
-    <!-- Title content of the page -->
-    <title>Shankarri Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basic Portfolio</title>
 
-    <!-- Style sheet for this webpage is linked -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
+    <!-- Bring in the bootstrap CSS and user defined style.css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Fredoka+One|Teko|Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<!-- Call openContent function when page loads -->
-<body id="mainPage" onload="openContent('indexInfo')">
-
-    <div id="headerTab">
-        <section class="btnName"> Shankarri Ragavan </section>
-
-      <!-- Navigation tab with onclick funtion  -->
-        <section class="tab">
-            <button class="tablinks" onclick="openContent('indexInfo')">About</button>
-            <button class="tablinks" onclick="openContent('portfolioInfo')">Portfolio</button>
-            <button class="tablinks" onclick="openContent('contactInfo')">Contact</button>
-        </section>
+<body class="main_content">
+    <!-- Static navbar -->
+    <div class="bg-dark">
+        <nav class="navbar ml-lg-5 py-0">
+            <div class="p-2 nav-item text-white nav-heading">
+                <p class="m-0 p-0">Shankarri Ragavan</p>
+                <p class="email m-0 p-0">shanki.ranju@gmail.com </p>
+            </div>
+        </nav>
+    </div>
+    <!-- Main Body goes in Container -->
+    <div class="container mx-0 px-0 my-2 my-md-4 mx-lg-5" id="indexInfo">
+        <div class="row mx-0">
+            <div class="col-sm-12 bg-dark">
+                <h3 class="font-weight-bold py-3"> About Me </h3>
+                <!-- Random paragraph from Loem ipsum -->
+                <img src="images/Profile_Picture.jpeg" class="profile_img pt-3 px-5 px-md-auto img-fluid"
+                    alt="Shankarri Ragavan" />
+                <p>Professional with 5 years’ of experience in Web UI development, across various domains. Particularly
+                    strong in Omni channel web development from designing, implementing, testing, debugging,
+                    integrating, documenting and maintaining web applications. Interested in being part of a project to
+                    instill my expertise and enhance my skills in a more dynamic technology oriented environment. </p>
+            </div>
+        </div>
     </div>
 
-    <!-- Index information for About Navigation tab  -->
-    <div id="indexInfo" class="tabContent">
-        <h2>Shankarri Ragavan</h2>
-
-        <!-- 3 Random paragraph from Loem ipsum -->
-        <p>
-            <img src="assets/images/Profile Picture.jpg" alt="Shankarri Ragavan">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras cursus ante semper nibh pretium lobortis.
-            Phasellus orci tortor, auctor a lacinia in, tempus convallis felis. Praesent velit risus, luctus a
-            consequat quis, sollicitudin quis enim. Ut egestas erat vitae arcu tincidunt, ac pulvinar tortor
-            faucibus.
-            Nullam pulvinar nunc id vehicula porta. Ut pellentesque purus at arcu viverra posuere. Curabitur eget
-            dolor
-            laoreet, viverra diam vel, tempor magna.</p>
-        <p> Mauris malesuada sapien in fermentum ornare. Ut tellus ex, imperdiet ut urna tempus, maximus dapibus
-            nisl.
-            Praesent blandit, justo at efficitur lacinia, lacus magna luctus nulla, eu lacinia ipsum ex quis orci.
-            Aliquam erat volutpat. Nulla eu nibh vitae massa accumsan rhoncus. Donec cursus faucibus diam, vitae
-            sodales erat lacinia eu. Pellentesque et rutrum dui.
-        </p>
-        <p>Quisque consectetur finibus sapien. Vestibulum quis magna pretium lorem aliquam viverra. Suspendisse sed
-            aliquam neque, at ultrices diam. Aliquam sollicitudin sem a mauris malesuada placerat. In tempor, metus
-            eget suscipit aliquet, sapien nulla lobortis lacus, at consectetur lorem urna a velit. Sed aliquet, mi
-            a
-            feugiat tempus, ante tortor dignissim ligula, ac pharetra tellus tellus quis orci.
-        </p>
-    </div>
-
-    <!-- iframe linking for Portfolio Navigation tab  -->
-    <iframe id="portfolioInfo" src="portfolio.html" class="tabContent"></iframe>
-
-    <!-- iframe linking for Contact Navigation tab  -->
-    <iframe id="contactInfo" src="contact.html" height="100%" class="tabContent"></iframe>
-
-    <script>
-        // Function for displaying content only for selected Tab
-        function openContent(tabName) {
-            if (tabName == "indexInfo") {
-                document.getElementById("indexInfo").style.display = "block";
-                document.getElementById("portfolioInfo").style.display = "none";
-                document.getElementById("contactInfo").style.display = "none";
-            }
-            if (tabName == "portfolioInfo") {
-                var pf = document.getElementById("portfolioInfo");
-                document.getElementById("portfolioInfo").style.display = "block";
-                document.getElementById("indexInfo").style.display = "none";
-                document.getElementById("contactInfo").style.display = "none";
-            }
-            if (tabName == "contactInfo") {
-                document.getElementById("contactInfo").style.display = "block";
-                document.getElementById("indexInfo").style.display = "none";
-                document.getElementById("portfolioInfo").style.display = "none";
-            }
-        }
-
-    </script>
 </body>
-<footer>
-    <p>Copyright @</p>
-</footer>
+<!-- Seperate Footer -->
 
 </html>

@@ -2,41 +2,50 @@
 <html>
 
 <head>
-    <!-- Style sheet for this webpage is linked -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bring in the bootstrap CSS and user defined style.css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body>
-    <h2>Portfolio</h2>
-    <!-- Defining Image container for styling -->
-    <div id="imgContainer">
-        <table>
-            <tr>
-                <td>
-                    <img src="assets/images/Goofing.bmp" alt="Goofying off">
-                    <div class="imgTopText">Be Goofy</div>
-                </td>
-                <td>
-                    <img src="assets/images/Friend Smile.jpg" alt="Friend Smile">
-                    <div class="imgTopText">Smile please</div>
-                </td>
-                <td>
-                    <img src="assets/images/dancing.jpg" alt="Dancing">
-                    <div class="imgTopText">Dance Off</div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="assets/images/Sing.png" alt="Wait for me">
-                    <div class="imgBottomText">Sing from ur soul</div>
-                </td>
-                <td>
-                    <img src="assets/images/Play with me.jpg" alt="Thinking">
-                    <div class="imgBottomText"> Play with me</div>
-                </td>
+<body class="main_content">
 
-            </tr>
-        </table>
+    <!-- Defining each row and column for images inside container-->
+    <div class="container px-sm-4 mx-sm-3 px-4 my-2 py-3 my-md-4 mx-lg-5" id="portfolio_Container">
+        <div class="row pb-3 bg-white">
+            <div class="col-md-12">
+                <h3 class="font-weight-bold py-3"> Portfolio </h3>
+            </div>
+        </div>
+        <div class="row bg-white">
+            <div class="col-md-6">
+                <img class="portfolio_Img pb-3" src="images/Goofing.bmp" alt="Goofying off">
+                <div class="imgText">Goofying</div>
+            </div>
+            <div class="col-md-6">
+                <img class="portfolio_Img pb-3" src="images/SmilePlease.jpg" alt="Friend Smile">
+                <div class="imgText ">Smile please</div>
+            </div>
+        </div>
+        <div class="row bg-white ">
+            <div class="col-md-6">
+                <img class="portfolio_Img pb-3" src="images/dancing.jpg" alt="Dancing">
+                <div class="imgText ">Dance Off</div>
+            </div>
+            <div class="col-md-6">
+                <img class="portfolio_Img pb-3" src="images/Sing.png" alt="Wait for me">
+                <div class="imgText ">Sing a song</div>
+            </div>
+        </div>
+        <div class="row bg-white ">
+            <div class="col-md-6">
+                <img class="portfolio_Img pb-5" src="images/Behappy.jpg" alt="Thinking">
+                <div class="imgText ">Be Happy</div>
+            </div>
+
+        </div>
     </div>
 </body>
 
