@@ -6,13 +6,12 @@
     color: white;
     background: url("../images/Background.jpg");
 }
-.navbar a
+.navbar a, .portfolio
 {
     background-color: black;
-    padding: 5px;
 }
 /* Heading inside Navigation bar */
-.nav-heading, .card-header, .about_me, .portfolio {
+.nav-heading, .card-header, .about_me, .portfolio-head {
     background-color: #347a77;
     font-size: 25px;
     font-family: 'Fredoka One';
@@ -31,4 +30,10 @@
 {
     width: 200px;
     float: left;
+}
+
+.portfolio img
+{
+    margin-top: 10px;
+    height: 75px;
 }
