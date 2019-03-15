@@ -4,17 +4,20 @@
     font-size: 18px;
     line-height: 30px;
     color: white;
-    background: url("../images/Background.jpg");
-}
-.navbar a, .portfolio
-{
     background-color: black;
+    background: url("../images/extra_bg/Black.png");
+}
+
+.navbar
+{
+    border:1px solid black;
 }
 /* Heading inside Navigation bar */
 .nav-heading, .card-header, .about_me, .portfolio-head {
-    background-color: #347a77;
+    /* background-color: #347a77; */
     font-size: 25px;
     font-family: 'Fredoka One';
+    align-content: center;
 }
 
 .email
@@ -23,8 +26,13 @@
     text-align: center;
     font-size: 20px;
 }
-
-
+h5{
+    text-align: center;
+}
+.card
+{
+    background: url("../images/extra_bg/Black.png");
+}
 /* Profile Page Image style  */
 .profile_img
 {
@@ -35,5 +43,5 @@
 .portfolio img
 {
     margin-top: 10px;
-    height: 75px;
+    height: 100px;
 }
