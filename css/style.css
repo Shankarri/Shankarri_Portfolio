@@ -7,7 +7,10 @@
     background-color: black;
     background: url("../images/extra_bg/Black.png");
 }
-
+.container
+{
+max-width: 90%;
+}
 .navbar
 {
     border:1px solid black;
